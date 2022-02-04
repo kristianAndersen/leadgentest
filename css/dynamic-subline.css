@@ -1,0 +1,40 @@
+
+.dynamic-subline{
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgba(var(--Freshblue), 1);
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+overflow: hidden;
+  }
+  .dsHidden{
+    display: none;
+  }
+  .dsShow{
+    display: inline-block;
+  }
+  
+  .dynamicletters {
+    font-weight: 900;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 1; 
+  }
+  
+  .letter1,.letter2,.letter3,.letters-4 {
+    display: inline-block;
+    line-height: 1em;
+   
+  }

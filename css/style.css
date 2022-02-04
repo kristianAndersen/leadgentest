@@ -1,0 +1,149 @@
+:root{
+  /*Black#000000rgb(0,0,0)*/
+  --Black: 0, 0, 0;
+  /*White#FFFFFFrgb(255,255,255)*/
+  --White: 255, 255, 255;
+  /*LightGrey#ECF0F4rgb(236,240,244)*/
+  --LightGrey: 236, 240, 244;
+  /*LightRed#F44A4Argb(244,74,74)*/
+  --LightRed: 224, 74, 74;
+  /*DeepRed#C6232Argb(198,35,42)*/
+  --Deepred: 198, 35, 42;
+  /*Lightblue#77ACD9rgba(119,172,217):;
+  */--LightBlue: 119, 172, 217;
+  /*Freshblue*#337ab7rgb(51,122,183)*/
+  --Freshblue: 51, 122, 183;
+  /*Blue#5D80B7rgb(93,128,183):;*/
+  --Blue: 93, 128, 183;
+  /*DarkBlue#1B3F63rgb(27,63,99):;*/
+  --DarkBlue: 27, 63, 99;
+  /*LightGreen#DFF0D8rgb(223,240,216)*/
+  --LightGreen: 223, 240, 216;
+  /*Green#82BC68rgb(130,188,104)*/
+  --Green: 130, 188, 104;
+  /*DarkGreen#3C763Drgb(60,118,61)*/
+  --DarkGreen: 60, 118, 61;
+  
+  --staticgradient:linear-gradient(45deg, #5D80B7 -4.82%, #FFFFFF 120%);
+  --staticgradient:-moz-linear-gradient(45deg, #5D80B7 -4.82%, #FFFFFF 120%);
+  --staticgradient:-webkit-linear-gradient(45deg, #5D80B7 -4.82%, #FFFFFF 120%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5d80b7", endColorstr="#82BC68", GradientType=1);
+  --radius:0.5rem;
+  -webkit-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5d80b7", endColorstr="#82BC68", GradientType=1);
+}
+/*** The new CSS Reset - version 1.4.5 (last updated 13.1.2022) ***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]){
+  display:none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly. */
+:where([contenteditable]){
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  line-break: after-white-space;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+:root{
+   --bradius:0.8rem
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: transparent!important;
+}
+
+html{
+  font-size: 62.5%;
+  height:100%
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+
+h1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(var(--DarkBlue),1);
+}
+h2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3{
+  margin-top: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h4{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+

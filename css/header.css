@@ -1,0 +1,44 @@
+.backgroundblue{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--staticgradient);
+    z-index: -1;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 45% 100%);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2;
+}
+.headersection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.formsection{
+    display: flex;
+    justify-content: center;
+
+}
+.listsection{ 
+    display: flex;
+    justify-content: center;
+}
+
+  .headertxt{
+      text-align: center;
+      margin-top: calc(0.5rem + 0.5vw);
+      margin-bottom: calc(2rem + 0.5vw);
+  }

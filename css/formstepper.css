@@ -1,0 +1,110 @@
+
+#numberform{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(4rem, 6vw, 7rem);
+    color: wheat;
+}
+
+
+.stepper.horizontal{
+    display: block;  
+}
+
+
+
+.stepper.horizontal p{
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.stepper.horizontal {
+    position: relative;
+    text-align: center;
+    
+    width: 30rem;
+    height: 11.9rem;
+  }
+  .stepper.horizontal .arrow {
+    width: 7rem;
+    opacity: 0.5;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+  }
+  .stepper.horizontal .arrow:hover {
+    opacity: 1;
+  }
+  .stepper.horizontal .arrow.top {
+    transform: translateY(-50%);
+    top: 5.9rem;
+    left: -1.1rem;
+  }
+  .stepper.horizontal .arrow.bottom {
+    transform: rotate(180deg) translateY(-50%);
+    top: -1.2rem;
+    right: -1.1rem;
+  }
+  .stepper.horizontal .box {
+    overflow: hidden;
+    height: 92px;
+    position: relative;
+    padding: 10px 0;
+    margin: 0 50px;
+  }
+  .stepper.horizontal .box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+   /* background: linear-gradient(to right, #ff6f72 0%, rgba(125, 185, 232, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff6f72", endColorstr="#007db9e8",GradientType=1 );*/
+    z-index: 1;
+  }
+  .stepper.horizontal .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    /*background: linear-gradient(to right, #ff6f72 0%, rgba(125, 185, 232, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ff6f72", endColorstr="#007db9e8",GradientType=1 );*/
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+  .stepper.horizontal .box span {
+    display: inline-block;
+    letter-spacing: 1px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ 
+}
+  .stepper.horizontal .box .numbers1 {
+    position: absolute;
+    top: -2rem;
+    left: 31px;
+    display: flex;
+  }
+  .stepper.horizontal .box .numbers1 span {
+    transform: translateX(0);
+  }
+  .stepper.horizontal .box .numbers2 {
+    position: absolute;
+    top: 12px;
+    left: 31px;
+    display: flex;
+  }
+  .stepper.horizontal .box .numbers2 span {
+    transform: translateX(185px);
+  }

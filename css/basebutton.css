@@ -1,0 +1,32 @@
+.base-button {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  width: calc(100% - 2rem);
+  text-align: center;
+
+  border: none;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+  border-color: rgba(253, 169, 13, 0);
+  color: rgba(var(--White), 1);
+  line-height: 5rem;
+  min-height: 2rem;
+  font-weight: 500;
+  font-size: clamp(calc(1rem + 0.5rem) ,3vw,calc(1.1rem + 0.5rem));
+  text-transform: uppercase;
+ 
+}
+
+.base-button:first-child {
+  -webkit-user-select: none !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

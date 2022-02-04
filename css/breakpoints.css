@@ -1,0 +1,244 @@
+@media (min-width: 280px) {
+
+    h1 {
+        font-size: clamp(calc(1.5rem + 0.5rem), 4vw, calc(4rem + 0.5vw));
+    }
+
+    h2 {
+        font-size: clamp(calc(0.4rem + 0.5rem), 4vw, calc(0.9rem + 0.5vw));
+    }
+
+    h3 {
+        font-size: clamp(calc(1rem + 0.5rem), 4vw, calc(1.5rem + 0.5vw));
+    }
+
+    p {
+        font-size: calc(1rem + 0.5rem);
+    }
+    .exampelPligtWrap{
+        text-align: center;
+        width: calc(90% + 0.5vw);
+    }
+    .dynamicexampel{
+        margin-top: 2rem;
+        font-size: clamp(calc(0.40rem + 0.5rem), 5vw, calc(0.5rem + 0.5vw) );
+    }
+    .pligt{
+        font-size: clamp(calc(0.1rem + 0.5rem), 5vw, calc(0.25rem + 0.5vw) );
+    }
+
+    .backgroundblue {
+        position: relative;
+        height: 4.5rem;
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: max-content;
+        height: -moz-max-content;
+        height: -webkit-max-content;
+        height: -o-max-content;
+        height: -ms-max-content;
+        block-size: max-content;
+        block-size: -moz-max-content;
+        block-size: -webkit-max-content;
+        block-size: -o-max-content;
+        block-size: -ms-max-content;
+    }
+
+    .navbar {
+        height: 5rem;
+    }
+
+    .headersection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .listsection {
+        display: flex;
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+    .listsection h2 {
+        color: rgba(var(--LightRed), 1);
+      
+    }
+
+    .formbg {
+        height: calc(39rem + 3vh);
+    }
+    .formExpanded{
+        min-height: 70rem;
+        height: max-content;
+        height: -moz-max-content;
+        height: -webkit-max-content;
+        height: -o-max-content;
+        height: -ms-max-content;
+        block-size: max-content;
+        block-size: -moz-max-content;
+        block-size: -webkit-max-content;
+        block-size: -o-max-content;
+        block-size: -ms-max-content;
+        transition: height .3s ease-in-out;
+        -webkit-transition: height .3s ease-in-out;
+        -moz-transition: height .3s ease-in-out;
+        -ms-transition: height .3s ease-in-out;
+        -o-transition: height .3s ease-in-out;
+    }
+    .btnwrap{
+        width: calc(100% - 2rem);
+    }
+
+    .slidersExpanded{
+          height: 31rem;
+          transition: height .3s ease-in-out;
+          -webkit-transition: height .3s ease-in-out;
+          -moz-transition: height .3s ease-in-out;
+          -ms-transition: height .3s ease-in-out;
+          -o-transition: height .3s ease-in-out;
+    }
+    .loantypetextblue{
+        display: none;
+    }
+
+    .loantypetext,
+    .monthlycost {
+        font-size: calc(1rem + .5vw);
+    }
+    .signup-steps{
+        display: flex;
+        flex-direction: column;
+    }
+    .signup-step {
+      text-align: center;
+      width: 100%;
+      padding: clamp(calc(2rem + 2vw), 5vw,calc(10rem + 5vw));
+    }
+    .signup-step > picture{
+        max-width: 75%;
+    }
+    .signup-step img{
+        width: calc(100% - 5vw);
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+    header{
+        height: 100%;
+    }
+    .backgroundblue {
+        position: absolute;
+        height: 100%;
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 45% 100%);
+    }
+
+    .headersection {
+        width: 50%;
+        height: calc(100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: clamp(calc(3.5rem + 0.5rem), 4vw, calc(4rem + 0.5vw));
+    }
+
+    .formbg {
+        height: calc(43rem + 3vh);
+        width: 80%;
+    }
+  
+    .exampelPligtWrap{
+        width: calc(75% + 0.5vw);
+    }
+
+    .loantypetextblue{
+        display: block;
+    }
+
+    .ulwrap {
+        margin-top: calc(-24rem + 0.5vw)
+    }
+
+    li {
+        font-size: calc(1rem + 0.5vw);
+        line-height: calc(5.5rem + 0.5vw);
+        color: rgba(var(--White), 1);
+    }
+
+    .signup-steps{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: clamp(calc(6rem + 0.5rem), 3vw, calc(10rem + 0.5vw));
+    }
+    .formbg {
+        height: calc(43rem + 3vh);
+    }
+
+
+}
+
+
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: clamp(calc(5.5rem + 0.5rem), 5vw, calc(11rem + 0.5vw));
+    }
+    h2 {
+        font-size: clamp(calc(1rem + 0.5rem), 5vw, calc(1.5rem + 0.5vw));
+    }
+
+
+
+    .listsection {
+        display: inline-flex;
+    }
+
+    li {
+        font-size: clamp(calc(2rem + 0.5rem), 5vw, calc(2.5rem + 0.5vw));
+        line-height: calc(6rem + 0.5vw);
+
+    }
+
+    .formbg {
+        height: calc(48rem + 3vh);
+        width: calc(60% + 0.5vw);
+    }
+    .exampelPligtWrap{
+        width: calc(57% + 0.5vw);
+    }
+
+}
+
+@media (min-width: 1300px){
+    h1 {
+        font-size: clamp(calc(5.5rem + 0.5rem), 5vw, calc(9rem + 0.5vw));
+    }
+    h2 {
+        font-size: clamp(calc(1rem + 0.5rem), 5vw, calc(1.5rem + 0.5vw));
+    }
+    li {
+        font-size: clamp(calc(2rem + 0.5rem), 5vw, calc(2.2rem + 0.5vw));
+        line-height: calc(5.5rem + 0.5vw);
+
+    }
+}

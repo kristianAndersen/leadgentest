@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+<div class="backgroundblue"></div>
+  <header>
+
+    
+    <section class="headersection listsection order-0 order-md-1">
+   
+     
+    
+      <div class="ulwrap">
+        <section class="headertxt">
+          <h1>Finn din nye lånemulighet</h1>
+          <h2>Motta informasjon om lån direkte på telefonen</h2>
+          <!--on mobile-->
+        <div class="dynamic-subline"></div>
+        </section>
+          <div class="listwrap ">
+            <ul class="d-none d-sm-block d-sm-none d-md-block">
+              <li class="">Dette er ikke en lånesøknad</li>
+              <li class="">Få lånetilbud som den første</li>
+              <li class="">Gratis og uforpliktende tjeneste</li>
+            </ul>
+          </div>
+      </div>
+
+
+    </section>
+
+    <section class="headersection formsection order-1 order-md-0">
+      <div class="formbg">
+        <div id="formslidewrap">
+          <!-- AMOUTNT SLIDER-->
+          <section class="bgslider sliders">
+            <p class="loantypetext">Hvor mye vil du refinansiere?</p>
+            <!--Amount Slider-->
+            <div class="amountWrap">
+              <div class="plusminus">
+                <button class="calculator-round-button amountminus" id="amount-minus">-</button>
+              </div>
+              <div class="amounRangetWrap">
+
+                <form>
+                  <output id="amountValue" class="">250000</output>
+                  <input type="range" id="amountrange" class="" min="10000" max="600000" value="250000" step="1000"
+                    oninput="amountValue.value=value" aria-valuemin="10000" aria-valuemax="600000"
+                    aria-valuenow="250000" aria-label="lånebeløp" />
+                </form>
+
+
+              </div>
+
+              <div class="plusminus">
+                <button class="calculator-round-button amountplus" id="amount-plus">+</button>
+              </div>
+
+            </div>
+         
+
+            <div class="fromto gx-0 pt-1 clearfix"><span class="from frompadl">10 000</span><span class="to topadr">600
+                000</span></div>
+          <!--Amount Slider-->
+
+            <!--PERIOD SLIDER-->
+            <p class="loantypetext">Ønsket nedbetalingstid</p>
+            <div class="amountWrap">
+              <div class="plusminus">
+                <button class="calculator-round-button amountminus" id="period-minus">-</button>
+              </div>
+              <div class="amounRangetWrap">
+
+
+
+                <form>
+                  <output id="yearvalue" class="">15</output>
+                  <input type="range" id="periodrange" class="" min="1" max="15" value="5" step="1"
+                    oninput="yearvalue.value=value" aria-valuemin="1" aria-valuemax="15" aria-valuenow="15"
+                    aria-label="driftstid" />
+                </form>
+
+
+              </div>
+
+              <div class="plusminus">
+                <button class="calculator-round-button amountplus" id="period-plus">+</button>
+              </div>
+
+            </div>
+            <div class="fromto gx-0 pt-1 clearfix"><span class="from fY noIosSelect frompadl">1</span><span
+                class="to tY noIosSelect topadr">15</span></div>
+
+                <div class="d-flex d-flex justify-content-center justify-items-center" id="monthly_cost">
+                  <p><span class="monthlycost pt-1 noIosSelect mx-auto">Anslått månedlig kostnad
+                          <br><strong id="expectedamount" class="mx-auto">3 301 kr</strong></span></p>
+              </div>
+          </section>
+            <!--INPUTFIELDS-->
+            <section class="bgslider inputs pt-2">
+              <p class="loantypetext loantypetextblue">Du vil vite mer om muligheten for å låne<br> xxx xxx kr over xx år</p>
+              <form  action="" method="post">
+                
+                <!--Name-->
+                <div class="formelementwrap">
+                  <span class="invalidInput" id="name">Fullt Navn</span>
+                  <input name="fname" id="fname" type="text" placeholder=" " aria-label="Fullt Navn her" pattern="^(?:((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-.\s])){1,}(['’,\-\.]){0,1}){2,}(([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-. ]))*(([ ]+){0,1}(((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){1,})(['’\-,\.]){0,1}){2,}((([^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]'’,\-\.\s])){2,})?)*)$" required/>
+                  <label for="fname" type="text" aria-labelledby="fname" id="fnamelable">Fornavn Etternavn</label>
+                </div>
+                  <!--End Name-->
+
+                <!--Email-->
+                <div class="formelementwrap">
+                <span class="invalidInput" id="epost">E-post</span>
+                <input name="email" id="email" type="email" placeholder=" " autocomplete="email" aria-label="din epost her" required/>
+                <label for="email" type="text" aria-labelledby="email" id="emaillable">navn@epost.com</label>
+                </div>
+                <!--End Email-->
+
+                    <!--phone-->
+                    <div class="formelementwrap">
+                      <span class="invalidInput" id="phonenum">Telefonnummer</span>
+                      <input name="phone" id="phone" type="tel" placeholder=" " autocomplete="tel" aria-label="dit Telefonnummer her" required/>
+                      <label for="phone" type="text" aria-labelledby="phone" id="phoneLable">XXX XX XXX</label>
+                      </div>
+                    <!--Phone-->
+                    <div class="formelementwrap">
+                      <div class="cbox">
+                        <input type="checkbox" class="cboxinput" id="crmcheck" aria-label="consent to email and sms" checked>
+                        <span></span>
+                        <p>Ja takk, DigiFinans.no får sende meg e-post og SMS samt kontakte meg via telefon med markedsføring og informasjon om produkttilbud.</p>
+                    </div>
+                    </div>
+              
+              </form>
+
+            </section>
+        </div>   
+        
+        <div class="btnwrap">
+          <button class="base-button next-button-back"> Tilbake</button>
+          <button class="base-button next-button"> <span class="btntxt1">Neste</span> <span class="btntxt2 btntxt2-hide">Kontakt meg</span>  </button>
+        </div>
+
+      </div>
+      <section class="exampelPligtWrap">
+        <p class="dynamicexampel">
+          <b>Priseksempel:</b> Lånebeløp 250 000 kr.
+       Nominell rente 13.49%.<br class="d-none d-sm-block">Effektiv rente 14.94%. 
+       Kostnad 99 081 kr, 
+       Totalt 349 081 kr.
+           </p>
+        <p class="pligt">Hver bank har individuell rente. Du må søke før vi kan gi deg tilbudene. Nedbetalingstiden er 1-15 år, eller maks 5 år om du ikke skal refinansiere. Nominell rente varierer fra minimum 4,90% til maksimum 21,95%. Effektiv rente varierer fra minimum 5,01% til maksimum 25,00%</p>
+      </section>
+
+    </section>
+  </header>
+
+  <!--How it works-->
+<section class="container-fluid">
+  <div class="signup-steps">
+    
+    <section class="signup-step order-0">
+      <picture>
+        <img src="./dist/assets/signup_step_1.jpg">
+      </picture>
+      <h4>Registrer deg</h4>
+       <p>Det tar bare 1 minutt. Tjenesten er også gratis og uforpliktende!</p>
+    </section>
+
+    <section class="signup-step">
+      <picture>
+        <img src="./dist/assets/signup_step_2.jpg">
+      </picture>
+      <h4>Motta informasjon om lån</h4>
+       <p> Vi informerer deg om de ulike lånemulighetene og hjelper deg med å finne de beste tilbudene på markedet.</p>
+    </section>
+    
+    <section class="signup-step">
+      <picture>
+        <img src="./dist/assets/signup_step_3.jpg">
+      </picture>
+      
+        <h4>Velg det beste lånetilbudet</h4>
+      <p> Velg tilbudet som passer deg best, og pengene utbetales til din konto.</p>
+    </section>
+  
+  </div>
+  <div class="col-10 mx-auto">
+  <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</div>
+</section>
+<!--How it works end-->
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
