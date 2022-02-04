@@ -23,7 +23,6 @@ fname.addEventListener('input', function() {
         seemsLegit(fnamelable)
         validName=true
     }
-
 });
 
 email.addEventListener('input', function() {
