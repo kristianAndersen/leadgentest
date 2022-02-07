@@ -1,11 +1,11 @@
 @media (min-width: 280px) {
 
     h1 {
-        font-size: clamp(calc(1.5rem + 0.5rem), 4vw, calc(8rem + 0.5vw));
+        font-size: clamp(calc(1.2rem + 0.5rem), 4vw, calc(8rem + 0.5vw));
     }
 
     h2 {
-        font-size: clamp(calc(1rem + 0.5rem), 4vw, calc(1.5rem + 0.5vw));
+        font-size: clamp(calc(0.5rem + 0.5rem), 4vw, calc(1.0rem + 0.5vw));
     }
     article > h2{
         font-size: clamp(calc(1.5rem + 0.5rem), 4vw, calc(4rem + 0.5vw));
@@ -120,7 +120,7 @@
 
     .loantypetext,
     .monthlycost {
-        font-size: calc(1rem + .5vw);
+        font-size: calc(1.2rem + .5vw);
     }
     .signup-steps{
         display: flex;
@@ -224,7 +224,7 @@
 @media (min-width: 1200px) {
 
     h2 {
-        font-size: clamp(calc(1rem + 0.5rem), 5vw, calc(1.5rem + 0.5vw));
+        font-size: clamp(calc(1rem + 0.5rem), 5vw, calc(1.4rem + 0.5vw));
     }
 
     article > h2{
@@ -252,9 +252,7 @@
 }
 
 @media (min-width: 1300px){
-    h2 {
-        font-size: clamp(calc(1rem + 0.5rem), 5vw, calc(1.5rem + 0.5vw));
-    }
+
     article > h2{
         font-size: clamp(calc(5.5rem + 0.5rem), 5vw, calc(9rem + 0.5vw));
     }
@@ -268,9 +266,9 @@
 
 @media (min-width:1400px) {
     .dynamicexampel{
-        font-size: clamp(calc(0.5rem + 0.5rem), 5vw, calc(0.8rem + 0.5vw) );
+        font-size: clamp(calc(0.5rem + 0.5rem), 5vw, calc(0.6rem + 0.5vw) );
     }
     .pligt{
-        font-size: clamp(calc(0.5rem + 0.5rem), 5vw, calc(0.7rem + 0.5vw) );
+        font-size: clamp(calc(0.3rem + 0.5rem), 5vw, calc(0.4rem + 0.5vw) );
     }
 }
