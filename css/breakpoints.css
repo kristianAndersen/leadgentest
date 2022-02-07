@@ -30,10 +30,10 @@
     }
     .dynamicexampel{
         margin-top: 2rem;
-        font-size: clamp(calc(0.40rem + 0.5rem), 5vw, calc(0.5rem + 0.5vw) );
+        font-size: clamp(calc(0.5rem + 0.5rem), 5vw, calc(0.95rem + 0.5vw) );
     }
     .pligt{
-        font-size: clamp(calc(0.1rem + 0.5rem), 5vw, calc(0.25rem + 0.5vw) );
+        font-size: clamp(calc(0.5rem + 0.5rem), 3vw, calc(0.8rem + 0.5vw) );
     }
 
     .backgroundblue {
@@ -137,19 +137,7 @@
     .signup-step img{
         width: calc(100% - 5vw);
     }
-    .two-col {
-        margin-top: 4rem;
-        padding-bottom: 4rem;
-        column-count:0;
-        column-gap:0rem;
-        -moz-column-count: 0;
-        -moz-column-gap: 0rem;
-        -webkit-column-count: 0;
-        -webkit-column-gap: 0rem;
-      }
-      .two-col h4{
-        margin-top: -2rem;
-      }
+ 
 
 }
 
@@ -206,20 +194,14 @@
         display: flex;
         flex-direction: row;
     }
+    .signup-step > picture{
+        max-width: 100%;
+    }
+    .signup-step img{
+        width: calc(10,0% - 5vw);
+    }
 
-    .two-col {
-        margin-top: 6rem;
-        padding-bottom: 4rem;
-        column-count:2;
-        column-gap:2rem;
-        -moz-column-count: 2;
-        -moz-column-gap: 2rem;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 2rem;
-      }
-      .two-col h4{
-        margin-top: -3.5rem;
-      }
+  
 }
 
 @media (min-width: 1024px) {
@@ -227,9 +209,7 @@
     article > h2{
         font-size: clamp(calc(6rem + 0.5rem), 3vw, calc(10rem + 0.5vw));  
     }
-    .two-col h4{
-        margin-top: -4rem;
-      }
+ 
     .formbg {
         height: calc(43rem + 3vh);
     }
@@ -239,19 +219,6 @@
 
 @media (min-width: 1100px) {
 
-    .two-col {
-        margin-top: 4rem;
-        padding-bottom: 4rem;
-        column-count:2;
-        column-gap:2rem;
-        -moz-column-count: 2;
-        -moz-column-gap: 2rem;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 2rem;
-      }
-      .two-col h4{
-        margin-top: -2.3rem;
-      }
 }
 
 @media (min-width: 1200px) {
@@ -296,5 +263,14 @@
         font-size: clamp(calc(1rem + 0.5rem), 5vw, calc(1.5rem + 0.5vw));
         line-height: calc(5.5rem + 0.5vw);
 
+    }
+}
+
+@media (min-width:1400px) {
+    .dynamicexampel{
+        font-size: clamp(calc(0.5rem + 0.5rem), 5vw, calc(0.8rem + 0.5vw) );
+    }
+    .pligt{
+        font-size: clamp(calc(0.5rem + 0.5rem), 5vw, calc(0.7rem + 0.5vw) );
     }
 }
