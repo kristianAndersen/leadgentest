@@ -33,7 +33,7 @@
     color: rgba(var(--Freshblue), 1);
     text-transform: uppercase;
     text-align: left;
-    max-width: 30ch;
+  /*  max-width: 30ch;*/
     white-space: nowrap;
     background-color: transparent!important;
 }
@@ -54,11 +54,12 @@
    
 }
 
-/*
+
  li:last-child:before{
     display: none;
     position: relative;
     top: 0rem;
+
     content: '';
     background-image: none;
     background-repeat: no-repeat;
@@ -67,4 +68,7 @@
     height: 0rem;
     padding: 0;
   }
-  */
+ .li-last-item {
+   margin-top: 2rem;
+    margin-left: 1.4rem;
+  }

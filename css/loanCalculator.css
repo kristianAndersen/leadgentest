@@ -100,8 +100,10 @@ margin-left: calc(0.5rem - 0.2rem);
     user-select: none;
     margin-block-start: 0em;
     margin-block-end: 0em;
+   /*
     margin-top: 1rem;
     margin-bottom: 1rem;
+    */
     color: rgba(var(--Green), 1);
 }
 .loantypetextblue{

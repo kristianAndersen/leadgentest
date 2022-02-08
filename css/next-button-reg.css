@@ -1,0 +1,39 @@
+.btn-reg-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.next-button-reg{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    width:25%;
+    height: 6rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background-color: rgba(var(--Green), 1);
+    overflow: hidden;
+
+    transition:background-color 250ms linear;
+    -webkit-transition:background-color 250ms linear;
+    -moz-transition:background-color 250ms linear;
+    -ms-transition:background-color 250ms linear;
+    -o-transition:background-color 250ms linear;
+    -webkit-transition:background-color 250ms linear;
+}
+
+.next-button-reg:hover{
+    background-color: rgba(var(--Freshblue), 1);
+    transition:background-color 250ms linear;
+    -webkit-transition:background-color 250ms linear;
+    -moz-transition:background-color 250ms linear;
+    -ms-transition:background-color 250ms linear;
+    -o-transition:background-color 250ms linear;
+    -webkit-transition:background-color 250ms linear;
+}

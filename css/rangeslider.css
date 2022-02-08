@@ -274,6 +274,7 @@
     -ms-transform:translateY(-0.6rem);
     -o-transform:translateY(-0.6rem);
     color: rgba(var(--Green), 1);
+    padding-top: 0.7rem
 }
   
   .from {

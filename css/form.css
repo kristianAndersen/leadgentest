@@ -3,7 +3,7 @@
     justify-content: center;    
     position: relative;
     width:calc(100% - 2rem);
-    height: calc(42rem + 15vh);
+
     background: rgba(var(--LightGrey), 1);
     box-shadow: inset 0px 0px 0.2rem rgba(var(--DarkGreen), 1);
     border-radius: var( --bradius);
@@ -77,7 +77,9 @@
     align-content: flex-start;
     align-items: flex-start;
 }
-
+.inputs{
+  padding-top: 3rem;
+}
 .btnwrap{
   position: absolute;
   display: flex;
@@ -97,11 +99,11 @@
     padding: 0.5rem;
     background-color: rgba(var(--LightRed), 1);
     overflow: hidden;
-    transition: width .3s ease-in-out;
-    -webkit-transition: width .3s ease-in-out;
-    -moz-transition: width .3s ease-in-out;
-    -ms-transition: width .3s ease-in-out;
-    -o-transition: width .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 .next-button-small{
   width: calc(70% - 2rem);
@@ -254,7 +256,7 @@ form {
   
   form> .formelementwrap  input:focus {
     border-color: rgba(var(--Freshblue), 0.5);
-    background-color: rgba(var(--LightGrey), 0.5);
+    background-color: rgba(var(--LightGrey), 0);
   
   }
   
@@ -297,7 +299,7 @@ form {
     -webkit-text-fill-color: rgba(var(--DarkGreen), 1)
   }
   
-  #phonelable,#ePostlable,.invalidInput {
+  #phonelable,#ePostlable,#fnamelable,.invalidInput {
     -webkit-user-select: none !important;
     -webkit-touch-callout: none !important;
     -webkit-user-select: none !important;

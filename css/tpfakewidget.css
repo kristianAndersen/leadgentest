@@ -1,0 +1,100 @@
+
+.tpfakewidget {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    transition-timing-function: ease-in;
+    -webkit-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transform:scale(1.2) ;
+    -webkit-transform:scale(1.2) ;
+    -moz-transform:scale(1.2) ;
+    -ms-transform:scale(1.2) ;
+    -o-transform:scale(1.2) ;
+}
+  .tpfakewidget a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+  }
+  
+  .tpfakewidget .trustpilot-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3.5rem;
+  }
+  
+  .tpfakewidget .trustpilot-logo svg {
+    width: 10rem;
+    height: 3rem;
+  }
+  .tpfakewidget .trustpilot-stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack:start;
+        align-content:flex-start;
+    width: 8rem;
+    height: 3rem;
+    overflow: hidden;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
+  
+  }
+  .trustpilot-stars  > .trustpilot-widget{
+  margin-top: -1rem;
+  
+  }
+  .tpfakewidget .trustpilot-score  {
+  
+   display: -webkit-box;
+  
+   display: -ms-flexbox;
+  
+   display: flex;
+   width: 10rem;
+   height: 5rem;
+   overflow: hidden;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+   -ms-flex-wrap: nowrap;
+       flex-wrap: nowrap;
+   -ms-flex-line-pack:start;
+       align-content:flex-start;
+   -webkit-box-pack: space-evenly;
+       -ms-flex-pack: space-evenly;
+           justify-content: space-evenly;
+   -webkit-box-align:start;
+       -ms-flex-align:start;
+           align-items:flex-start;
+   margin-bottom: -2.8rem;
+  }
+  
+  .trustpilot-score  > .trustpilot-widget{ 
+    margin-top: -0.6rem;
+  
+    transform: scale(0.85); -webkit-transform: scale(0.85); -moz-transform: scale(0.85); -ms-transform: scale(0.85); -o-transform: scale(0.85);
+  }
